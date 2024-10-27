@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando S3</title>
+</head>
+<body>
+    <h1>Crear un post</h1>
+    <form action="http://localhost:3000/api/posts" method="POST" enctype="multipart/form-data">
+       <input type="file" name="image">
+       <br>
+       <input type="text" name="caption" placeholder="caption">
+       <br>
+       <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
