@@ -1,4 +1,24 @@
+# Devolver todos los posts
 GET http://localhost:3000/api/posts
 
 ###
-DELETE http://localhost:3000/api/posts/1
+
+# Agregar un post
+POST http://localhost:3000/api/posts
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="viejon.jpg"
+Content-Type: image/jpg
+
+< viejon.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="caption"
+
+el viejon
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+# Elimina un post
+DELETE http://localhost:3000/api/posts/4
